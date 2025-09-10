@@ -1,0 +1,44 @@
+<html>
+
+<head>
+   <title>Event Handling</title>
+</head>
+
+<body>
+
+   <h1>Shopping List</h1>
+   <p>Get it done today</p>
+
+   <input type="text" id="inputText">
+   <!-- add a button here for adding new item -->
+    <Button id="add" onclick="addActivity()">Add</Button>
+
+   <ul>
+      <li>Notebook <Button id="delete">Delete</Button> </li>
+      <li>Jello <Button id="delete">Delete</Button> </li>
+      <li>Spinach<Button id="delete">Delete</Button> </li>
+      <li>Rice<Button id="delete">Delete</Button> </li>
+      <li>Birthday Cake<Button id="delete">Delete</Button> </li>
+      <li>Candles<Button id="delete">Delete</Button> </li>
+   </ul>
+
+   <script>
+
+      // add code here
+   
+      function addActivity() { 
+      const ulElem = document.querySelector("ul");
+      const newActivityVal = document.getElementById("inputText").value;
+      const liElem = document.createElement("li");
+      liElem.innerText = newActivityVal;
+      ulElem.appendChild(liElem); 
+
+      }
+      
+
+
+   </script>
+
+</body>
+
+</html>
