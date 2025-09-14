@@ -19,7 +19,19 @@
     <script>
         
         // add code here
+        const dropdownlist = document.getElementById("select_item");
+        const ulElem = document.querySelector("ul"); 
         
+
+        dropdownlist.addEventListener("change", function(){
+            const liElem = document.createElement("li");
+            liElem.innerText = dropdownlist.value;
+            ulElem.appendChild(liElem);
+        });
+        
+        
+        
+   
         
     </script>
 
